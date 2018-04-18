@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A237E"
+    tools:context="com.example.android.tictactoe.MainActivity">
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/start"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Let's play Tic Tac  toe"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="101dp"
+        android:text="start game"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TableLayout
+        android:id="@+id/board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:weightSum="3"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:text="X: it's your turn"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            android:id="@+id/playerTurn"/>
+
+        <TableRow android:id="@+id/row1">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_height="wrap_content"
+                android:width="90dp"
+                android:height="90dp"
+                android:textSize="25sp"
+                android:text=""
+                android:textColor="#4A148C" />
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="90dp"
+                android:height="90dp"
+                android:textSize="25sp"
+                android:text=""
+                android:textColor="#4A148C" />
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="90dp"
+                android:height="90dp"
+                android:textSize="25sp"
+                android:text=""
+                android:textColor="#4A148C" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/row2">
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="90dp"
+                android:height="90dp"
+                android:textSize="25sp"
+                android:text=""
+                android:textColor="#4A148C" />
+
+            <Button
+                android:id="@+id/b5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="90dp"
+                android:height="90dp"
+                android:textSize="25sp"
+                android:text=""
+                android:textColor="#4A148C" />
+
+            <Button
+                android:id="@+id/b6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="90dp"
+                android:height="90dp"
+                android:textSize="25sp"
+                android:text=""
+                android:textColor="#4A148C" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/row3">
+
+            <Button
+                android:id="@+id/b7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="90dp"
+                android:height="90dp"
+                android:textSize="25sp"
+                android:text=""
+                android:textColor="#4A148C" />
+
+            <Button
+                android:id="@+id/b8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="90dp"
+                android:height="90dp"
+                android:textSize="25sp"
+                android:text=""
+                android:textColor="#4A148C" />
+
+            <Button
+                android:id="@+id/b9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="90dp"
+                android:height="90dp"
+                android:text=""
+                android:textColor="#4A148C"
+                android:textSize="25sp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/board"
+        android:text="reset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/reset"
+        android:textSize="25sp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
